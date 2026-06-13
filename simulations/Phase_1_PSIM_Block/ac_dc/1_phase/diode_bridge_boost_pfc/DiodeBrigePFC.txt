@@ -1,0 +1,24 @@
+fs_PFC = 50k;
+fs_Buck = 50k;
+Vgrid = 311;
+L = 680u;
+Lbuck = 300u;
+C_Link =2800u;
+Load = 7.4k;
+VLink_ref = 420;
+Rpre = 5;
+Cfil = 2u;
+
+Coss = 250p;
+Ron = 50m;
+Vf = 2.5;
+CJ = 40p;
+ESR = 5m;
+deadtime_PFC = 200n;
+
+// Totem pole PFC
+Kp_V_PFC = 0.15; 
+Ti_V_PFC = 1/30; 
+Kp_I_PFC = 0.02;  
+Ti_I_PFC = 1/5000; 
+
