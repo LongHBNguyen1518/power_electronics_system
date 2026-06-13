@@ -17,8 +17,8 @@ ESR = 5m;
 deadtime_PFC = 200n;
 
 // Totem pole PFC
-Kp_V_PFC = 0.15; 
-Ti_V_PFC = 1/30; 
+Kp_V_PFC = 0.3; 
+Ti_V_PFC = 1/40; 
 Kp_I_PFC = 0.02;  
 Ti_I_PFC = 1/5000; 
 
