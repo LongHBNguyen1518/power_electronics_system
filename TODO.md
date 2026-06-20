@@ -11,8 +11,8 @@ This file tracks the implementation progress of each topology through the 3 phas
   - [x] Phase 1 (PSIM Block)
   - [ ] Phase 2 (PSIM DLL)
   - [ ] Phase 3 (MATLAB)
-- [ ] **Interleaved Boost PFC**
-  - [ ] Phase 1 (PSIM Block)
+- [ ] **Interleaved Totempole Boost PFC**
+  - [x] Phase 1 (PSIM Block)
   - [ ] Phase 2 (PSIM DLL)
   - [ ] Phase 3 (MATLAB)
 
