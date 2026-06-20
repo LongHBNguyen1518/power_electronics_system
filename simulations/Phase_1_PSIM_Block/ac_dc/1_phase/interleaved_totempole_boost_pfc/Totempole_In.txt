@@ -1,0 +1,25 @@
+// PFC stage
+pi=3.141592653589793;
+Vg = 310;
+fg = 50;
+fs_PFC = 50k;
+VLink =820;
+P=7400;
+R=100;
+Lg = 400u;
+
+CLink=2000u;
+Coss = 250p;
+Cj = 30p;
+Ron =20m;
+Vf =2;
+ESR = 5m;
+
+
+// Control of PFC stage
+Kp_V =0.3;
+Ti_V = 1/40;
+Kp_I = 0.015;
+Ti_I = 1/4000;
+
+
