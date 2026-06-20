@@ -98,9 +98,6 @@ mindmap
           Forward(Forward)
             Std_Forward[Standard]
             Int_Forward[Interleaved]
-    System(System Level)
-      Bipolar[Bipolar DC Bus]
-      SST[Solid State Transformer]
 ```
 
 ## 4. Workflow Rules
