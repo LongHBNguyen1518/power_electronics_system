@@ -45,6 +45,13 @@ To fully eliminate the current spikes at ZC, the control algorithm implemented i
 *   **HF Disable at ZC:** High-frequency switching is completely disabled (shut down) inside the ZC blanking zone. This prevents high-frequency charging and discharging of the $C_{oss}$ capacitors at low input voltages, eliminating the primary cause of ZC current spikes.
 *   **Soft-Start Re-activation:** Once the grid voltage exits the ZC blanking zone and enters the next half-cycle, HF switching is re-enabled. Instead of applying the full calculated Duty Cycle immediately, a **soft-start algorithm** gradually ramps the Duty Cycle up from zero. This ensures a smooth increase in inductor current, avoiding any abrupt surges.
 
+### d. Duty Cycle Feedforward ($D_{FF}$)
+To enhance the dynamic performance of the current control loop, a polarity-dependent feedforward duty cycle $D_{FF}$ is implemented:
+*   For $v_{ac} > 0$ (positive half-cycle):
+    $$D_{FF} = 1 - \frac{|v_g|}{V_{Link}}$$
+*   For $v_{ac} < 0$ (negative half-cycle):
+    $$D_{FF} = \frac{|v_g|}{V_{Link}}$$
+
 The control circuit schematic implemented in the simulation is shown below, detailing the dual-loop control and the ZC spike reduction logic:
 
 ![Totempole Boost PFC Control Circuit Schematic](../../images/totempole_boost_pfc_control.png)

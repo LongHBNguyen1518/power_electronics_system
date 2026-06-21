@@ -59,7 +59,11 @@ While this simulation focuses on a **2-phase** system, the interleaving concept 
 The control system regulates the DC link voltage while ensuring both phases share the current equally and stay interleaved:
 *   **Voltage Loop:** An outer PI controller regulates the DC link voltage ($V_{Link}$) against $V_{Link\_ref}$ to generate the total current reference command.
 *   **Current Sharing Loops:** The total current reference is split equally into two references ($I_{g\_ref} / 2$) for Phase A and Phase B. Separate inner PI controllers calculate the individual duty cycles ($D_a$ and $D_b$).
-*   **Feedforward ($D_{FF}$):** Combined with the PI outputs to improve transient performance.
+*   **Feedforward ($D_{FF}$):** Combined with the PI outputs to improve transient performance. A polarity-dependent feedforward duty cycle $D_{FF}$ is calculated as:
+    *   For $v_{ac} > 0$ (positive half-cycle):
+        $$D_{FF} = 1 - \frac{|v_g|}{V_{Link}}$$
+    *   For $v_{ac} < 0$ (negative half-cycle):
+        $$D_{FF} = \frac{|v_g|}{V_{Link}}$$
 *   **Interleaved Gate Driver:** Phase-shifted carrier waves generate PWM gate signals for $S_{a1}/S_{a2}$ and $S_{b1}/S_{b2}$ with a $180^\circ$ offset.
 *   **Zero-Crossing Spike Reduction:** Employs the early shut-down and delayed turn-on blanking logic for the low-frequency leg ($SP$ and $SN$).
 
