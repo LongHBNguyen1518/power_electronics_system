@@ -17,6 +17,19 @@ Below is the schematic diagram of the Totempole Boost PFC power circuit:
 
 ![Totempole Boost PFC Power Circuit Schematic](../../images/totempole_boost_pfc_schematic.png)
 
+### Design Specifications Summary
+The design and simulation parameters are summarized in the table below:
+
+| Parameter | Symbol | Value | Unit |
+| :--- | :---: | :---: | :---: |
+| Input AC Voltage (RMS) | $V_{ac}$ | 220 | $\text{V}_{rms}$ |
+| Grid Line Frequency | $f_g$ | 50 | $\text{Hz}$ |
+| Output DC Link Voltage | $V_{Link}$ | 820 | $\text{V}_{dc}$ |
+| Nominal Output Power | $P_{out}$ | 7.4 | $\text{kW}$ |
+| High-Frequency Switching Frequency | $f_{sw}$ | 50 | $\text{kHz}$ |
+| High-Frequency Inductor Value | $L_g$ | 400 | $\mu\text{H}$ |
+| Output DC Link Capacitor | $C_{Link}$ | 2000 | $\mu\text{F}$ |
+
 ---
 
 ## 2. Zero-Crossing Current Spike Issue (ZC Spike)

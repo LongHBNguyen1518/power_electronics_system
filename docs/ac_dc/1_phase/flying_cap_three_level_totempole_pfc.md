@@ -28,6 +28,20 @@ Below is the diagram showing the conduction states and current paths during the 
 
 ![Idealized Waveforms and Conduction Paths](../../images/flying_cap_three_level_totempole_pfc_switching_paths.png)
 
+### Design Specifications Summary
+The design and simulation parameters are summarized in the table below:
+
+| Parameter | Symbol | Value | Unit |
+| :--- | :---: | :---: | :---: |
+| Input AC Voltage (RMS) | $V_{ac}$ | 220 | $\text{V}_{rms}$ |
+| Grid Line Frequency | $f_g$ | 50 | $\text{Hz}$ |
+| Output DC Link Voltage | $V_{Link}$ | 800 / 400 | $\text{V}_{dc}$ |
+| Nominal Output Power | $P_{out}$ | 7.4 | $\text{kW}$ |
+| High-Frequency Switching Frequency | $f_{sw}$ | 50 | $\text{kHz}$ |
+| Flying Capacitor Value | $C_{fly}$ | 10 | $\mu\text{F}$ |
+| HF Leg Inductor Value | $L_g$ | 200 | $\mu\text{H}$ |
+| Output DC Link Capacitor | $C_{Link}$ | 2000 | $\mu\text{F}$ |
+
 ---
 
 ## 2. Flying Capacitor Dimensioning

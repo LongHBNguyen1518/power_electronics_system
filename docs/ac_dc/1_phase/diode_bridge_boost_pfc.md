@@ -14,6 +14,19 @@ Below is the schematic diagram of the Diode Bridge + Boost PFC power circuit:
 
 ![Diode Bridge + Boost PFC Power Circuit Schematic](../../images/diode_bridge_boost_pfc_schematic.png)
 
+### Design Specifications Summary
+The design and simulation parameters are summarized in the table below:
+
+| Parameter | Symbol | Value | Unit |
+| :--- | :---: | :---: | :---: |
+| Input AC Voltage (RMS) | $V_{ac}$ | 220 | $\text{V}_{rms}$ |
+| Grid Line Frequency | $f_g$ | 50 | $\text{Hz}$ |
+| Output DC Link Voltage | $V_{Link}$ | 420 | $\text{V}_{dc}$ |
+| Nominal Output Power | $P_{out}$ | 7.4 | $\text{kW}$ |
+| High-Frequency Switching Frequency | $f_{sw}$ | 50 | $\text{kHz}$ |
+| Boost Inductor Value | $L$ | 680 | $\mu\text{H}$ |
+| Output DC Link Capacitor | $C_{Link}$ | 2800 | $\mu\text{F}$ |
+
 ### Control Circuitry & Strategy
 The controller utilizes **Average Current Mode Control (ACMC)** with a nested dual-loop structure:
 *   **Outer Voltage Loop:** Compares the output voltage $V_{dc}$ (regulated via a PI controller) to the reference $V_{Link\_ref}$. A notch filter is implemented to eliminate the $100\text{ Hz}$ second-harmonic ripple from the voltage loop feedback, preventing it from distorting the line current command.
