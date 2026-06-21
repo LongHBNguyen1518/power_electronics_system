@@ -32,11 +32,16 @@ TOPOLOGY_DATA = {
                 "cons": ["Requires high-performance SiC/GaN switches", "Complex control algorithms and dead-time management"],
                 "doc": "docs/ac_dc/1_phase/totempole_boost_pfc.md"
             },
-            "Flying Capacitor PFC": {
+            "Flying Cap Three Level Totempole PFC": {
                 "desc": "Multilevel single-phase converter utilizing flying capacitors to reduce voltage stress on semiconductors.",
                 "pros": ["Reduced switch voltage rating", "Smaller inductors due to multiplied effective switching frequency"],
                 "cons": ["Requires capacitor voltage balancing control", "High control complexity"],
-                "doc": "docs/ac_dc/1_phase/flying_capacitor_pfc.md"
+                "doc": "docs/ac_dc/1_phase/flying_cap_three_level_totempole_pfc.md",
+                "refs": [
+                    {"title": "Infineon 3.3 kW 3-Level Flying Capacitor PFC Reference Design", "url": "https://www.infineon.com/assets/row/public/documents/24/42/infineon-reference-design-ref-3k3w-3lfc-psu-applicationnotes-en.pdf"},
+                    {"title": "Infineon CoolSiC 400 V and 440 V G2 MOSFETs Application Note", "url": "https://www.infineon.com/assets/row/public/documents/24/42/infineon-infineon-coolsic-400-v-and-440-v-g2-mosfets-an-en-applicationnotes-en.pdf"},
+                    {"title": "TI 3-Level PFC Design Guide (sdaa195)", "url": "https://www.ti.com/lit/an/sdaa195/sdaa195.pdf"}
+                ]
             }
         },
         "3-Phase PFC": {

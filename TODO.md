@@ -19,8 +19,8 @@ This file tracks the implementation progress of each topology through the 3 phas
   - [x] Phase 1 (PSIM Block)
   - [ ] Phase 2 (PSIM DLL)
   - [ ] Phase 3 (MATLAB)
-- [ ] **Flying Capacitor PFC**
-  - [ ] Phase 1 (PSIM Block)
+- [ ] **Flying Cap Three Level Totempole PFC**
+  - [x] Phase 1 (PSIM Block)
   - [ ] Phase 2 (PSIM DLL)
   - [ ] Phase 3 (MATLAB)
 
