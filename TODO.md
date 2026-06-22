@@ -69,8 +69,16 @@ This file tracks the implementation progress of each topology through the 3 phas
   - [ ] Phase 1 (PSIM Block)
   - [ ] Phase 2 (PSIM DLL)
   - [ ] Phase 3 (MATLAB)
-- [ ] **LLC Resonant**
+- [ ] **1-Phase LLC Resonant (Half-Bridge)**
   - [ ] Phase 1 (PSIM Block)
+  - [ ] Phase 2 (PSIM DLL)
+  - [ ] Phase 3 (MATLAB)
+- [ ] **1-Phase LLC Resonant (Full-Bridge)**
+  - [ ] Phase 1 (PSIM Block)
+  - [ ] Phase 2 (PSIM DLL)
+  - [ ] Phase 3 (MATLAB)
+- [ ] **3-Phase LLC Resonant**
+  - [x] Phase 1 (PSIM Block) *(Documented in [3-Phase LLC Resonant Converter](file:///e:/PE_base_knowledge/power_electronics_system/docs/dc_dc/isolated/3_phase_llc_resonant_converter.md))*
   - [ ] Phase 2 (PSIM DLL)
   - [ ] Phase 3 (MATLAB)
 

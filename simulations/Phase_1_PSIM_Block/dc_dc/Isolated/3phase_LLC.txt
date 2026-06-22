@@ -1,0 +1,24 @@
+Load =7k;
+
+Coss = 400p;
+Ron = 30m;
+Vf = 2.5;
+ESR = 5m;
+ESL = 5n;
+
+deadtime = 100n;
+fs = 200k;
+VLink = 410;
+VBatt = 400;
+iBatt_max = 21.8; //7.4kW@340V
+Co = 40u;
+C1 = 16u;
+C2 = 16u;
+Cr = 90n; // Cr increase --> Duty S3 reduce --> ef increase ???
+Lr = 7.1u; //  Lr reduce--> Duty S3 reduce --> eff increase ???
+Lm = 63u;
+Cds = 220p;
+Cj = 30p;
+Pcharge =7.4k;
+LBatt = 4u;
+n = 1;
